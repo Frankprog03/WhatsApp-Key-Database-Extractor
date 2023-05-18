@@ -69,16 +69,7 @@ def check_java():
 
 
 def clean_tmp():
-    custom_print(">>> I am in view_extract.clean_tmp()", is_print=False)
-    if os.path.isdir(tmp):
-        custom_print(f'Cleaning up "{tmp}" folder...', "yellow")
-        try:
-            shutil.rmtree(tmp)
-        except PermissionError as e:
-            custom_print(f'Could not delete "{tmp}" folder...', "red")
-            custom_print(e, 'red')
-            custom_print('Delete it manually, it\'s important.')
-
+    pass
 
 def kill_me(reason: str = ""):
     custom_print(f">>> I am in view_extract.kill_me(reason={reason})", is_print=False)
